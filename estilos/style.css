@@ -122,7 +122,7 @@ a:hover{
 
 .hero__text-btn {
     position: relative;
-    top: 4em;
+    top: 15vh;
 }
 /*hero END*/
 
@@ -251,11 +251,11 @@ input {
 
 ::-webkit-scrollbar {
     width: 5px;}
-::-webkit-scrollbar-track {
+.review__bottom::-webkit-scrollbar-track {
     background: #f1f1f1;}
-::-webkit-scrollbar-thumb {
+.review__bottom::-webkit-scrollbar-thumb {
     background: var(--verde);}
-::-webkit-scrollbar-thumb:hover {
+.review__bottom::-webkit-scrollbar-thumb:hover {
     background:var(--rojo);}
 
 
