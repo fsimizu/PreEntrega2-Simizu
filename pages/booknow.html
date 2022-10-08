@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TedLead Resto</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    
+    <div class="grid__book-now">
+        <header class="header">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/TedLead-logo3.png" class="header__logo-img" alt="Logo">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__anchor" href="../pages/reviews.html">reviews</a></li>
+                    <li class="header__item"><a class="header__anchor" href="../pages/menu.html">menu</a></li>
+                    <li class="header__item"><a class="header__anchor" href="../pages/location.html">location</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="book__left">
+            <!--Main-->
+            <form action="" method="post">
+                <div class="book__item">
+                    <label for="date">Select a date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="book__item">
+                    <input type="radio" id="19:00" name="time" value="19:00" required>
+                    <label for="19:00">19:00</label>
+                    <input type="radio" id="19:30" name="time" value="19:30">
+                    <label for="19:30">19:30</label><br>
+                    <input type="radio" id="20:00" name="time" value="20:00">
+                    <label for="20:00">20:00</label>
+                    <input type="radio" id="20:30" name="time" value="20:30">
+                    <label for="20:30">20:30</label><br>
+                    <input type="radio" id="21:00" name="time" value="21:00">
+                    <label for="21:00">21:00</label>
+                    <input type="radio" id="21:30" name="time" value="21:30">
+                    <label for="21:30">21:30</label><br>
+                </div>
+                <div class="book__item">
+                    <label for="quantity">Number of guests</label>
+                    <input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="4" required>
+                </div>
+                <div class="book__item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Guest" required>
+                </div>
+                <div class="book__item">
+                    <label for="phone">Phone number</label>
+                    <input type="number" name="phone" id="phone" placeholder="+61" required>
+                </div>
+                <div class="book__item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="name@email.com" required>
+                </div>
+        
+                <input class="book__btn" type="submit" style="font-size: 20px;">
+                <input class="book__btn" type="reset" style="font-size: 20px;">
+            </form>
+        </div>
+
+        <div class="book__right">
+            <div class="hero__text">
+                <h1 class="hero__text-heading">reservations.</h1>
+                <h2 class="hero__text-slogan">one step away<br>
+            </div>
+        </div>
+    
+        <!--Footer-->
+        <footer class="footer">
+            <div>
+                <p>(c) 2022 TedLead</p>
+                <p>11 Delhi Rd., North Ryde, 2113 NSW, Australia</p>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="footer__item"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="footer__item"><a href="#" class="fa fa-tripadvisor"></a></li>            
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
