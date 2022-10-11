@@ -4,19 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --verde:#6a8d73;
     --blanco:#f4fdd9;
     --rojo:#f75077;
-}
+    }
 
 /*Colour palette
 Green (#6a8d73)
 White (#f4fdd9)
 Red (#f75077)
 */
-
 
 /*header START*/
 .header {
@@ -58,7 +56,6 @@ a:hover{
 }
 /*header END*/
 
-
 /*footer START*/
 .footer {
     background-color: var(--verde);
@@ -89,7 +86,6 @@ a:hover{
 }
 /*footer END*/
 
-
 /*hero START*/
 .index {
     background-image: url("../images/hero_image1.jpg");
@@ -97,6 +93,7 @@ a:hover{
 
 .hero {   
     height: 80vh;
+    min-height: 450px;
     color: var(--blanco);
     position: relative;
     background-position: left ;
@@ -137,7 +134,6 @@ a:hover{
     color: var(--blanco);
     transition-duration: 0.4s;
 }
-
 
 /*location START*/
 .grid__location {
@@ -223,6 +219,7 @@ input {
 .review__left {
     display: inline-block;
     height: 80vh;
+    min-height: 500px;
     font-size: 20px;
     background-color:var(--blanco);
     padding: 1em;
@@ -231,6 +228,7 @@ input {
 
 .review__right{
     display: inline-block;
+    min-height: 500px;
     height: 80vh;
     vertical-align:top;
     color: #f4fdd9;
@@ -239,14 +237,19 @@ input {
     background-size: cover;
     grid-area: right;
 }
+.review__right .hero__text-btn{
+    top: 1em;
+}
+.review__right .hero__text{
+    top: 10%;
+}
+
 .review__top {
-    height: 50%;
+    height: 45%;
 }
 .review__bottom {
-    margin-top: 20px;
-    height: 50%;
+    height: 55%;
     overflow-y: scroll;
-
 }
 
 ::-webkit-scrollbar {
@@ -259,10 +262,11 @@ input {
     background:var(--rojo);}
 
 
-.review__comment{
+.review__comment {
     font-size: 15px;
     font-weight: lighter;
     padding-right: 10px;
+    padding-bottom: 2em;
     text-align: justify;
 
 }
@@ -382,11 +386,17 @@ input {
         overflow: hidden;
     }
     .review__right .hero__text-heading {
-        font-size: 80px;
+        font-size: 70px;
     }
     .review__right .hero__text {
         margin: 1em;
     }
-
+    .book__right .hero__text {
+        margin: 1em;
+        font-size: 10px ;
+    }
+    .book__right .hero__text-heading {
+        font-size: 70px ;
+    }
 
 }
