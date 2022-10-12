@@ -148,6 +148,7 @@ a:hover{
 .location__text {
     display: inline-block;
     height: 80vh;
+    min-height: 500px;
     color: var(--blanco);
     background-image: url("../images/image3.jpg");
     background-position: left ;
@@ -204,6 +205,7 @@ input {
     background-size: cover;
     grid-area: book-text;
 }
+
 /*Booking END*/
 
 /*Review START*/
@@ -224,6 +226,11 @@ input {
     background-color:var(--blanco);
     padding: 1em;
     grid-area: left;
+}
+.review__left textarea {
+    padding:5px; 
+    width: 100%; 
+    min-height: 50px;
 }
 
 .review__right{
@@ -247,9 +254,23 @@ input {
 .review__top {
     height: 45%;
 }
+.review__top form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.review__top #textarea {
+    flex-grow: 1;
+    height: 60%;
+}
+.review__top textarea {
+    height: 90%;
+}
+
 .review__bottom {
     height: 55%;
     overflow-y: scroll;
+    margin-top: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -275,6 +296,7 @@ input {
 /*Menu START*/
 .menu-main {
     background-image: url("../images/image2.jpg");
+    min-height: 500px;
 }
 .favoritos {
     width: 100vw;
