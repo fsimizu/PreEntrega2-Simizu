@@ -332,6 +332,26 @@ input {
     padding: 20px;
     margin: auto;
 }
+
+#carouselExampleCaptions {
+    margin: 0px auto;
+    max-width: 500px;
+
+}
+.favoritos__fondo {
+    background-color: var(--blanco);
+    padding: 50px;
+}
+.carousel-indicators {
+    bottom: 20%;
+}
+.carousel-caption {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: black;
+}
 /*Menu END*/
 
 @media screen and (max-width: 768px) {
