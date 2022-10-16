@@ -29,6 +29,13 @@ Red (#f75077)
     grid-area: header;
 }
 
+.header__nuevo{
+    background-color: var(--verde);
+    padding: 15px;
+    color: var(--blanco) ;
+    grid-area: header;
+}
+
 .header__item {
     list-style-type: none;
     display: inline-block;
@@ -37,7 +44,7 @@ Red (#f75077)
     }
 
 .header__logo-img {
-    max-width: 250px;
+    width: 250px;
     display: inline-block;
     filter: invert(95%) sepia(35%) saturate(214%) hue-rotate(16deg) brightness(96%) contrast(106%);
 }
@@ -47,12 +54,19 @@ Red (#f75077)
 }
 
 a, a:visited {
-    color: inherit;
-    text-decoration: none;
+    color: inherit !important;
 }
 
 a:hover{
-    color: #f75077;
+    color: #f75077 !important;
+}
+
+.navbar {
+    padding:0px;
+}
+
+#navbarNav {
+    justify-content: flex-end;
 }
 /*header END*/
 
@@ -75,15 +89,6 @@ a:hover{
     padding: 10px 20px;
     font-size: 30px;
     }
-
-a, a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #f75077;
-}
 /*footer END*/
 
 /*hero START*/
@@ -120,6 +125,13 @@ a:hover{
 .hero__text-btn {
     position: relative;
     top: 15vh;
+}
+
+.animation-delay-heading{
+    transition-duration: 1s !important;
+}
+.animation-delay-slogan{
+    transition-duration: 1.4s !important;
 }
 /*hero END*/
 
@@ -355,13 +367,6 @@ input {
 /*Menu END*/
 
 @media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
-    .header__list {
-        display: flex;
-        text-align: center;
-    }
 
     /*Location START*/
     .grid__location {
@@ -402,6 +407,9 @@ input {
 }
 
 @media screen and (max-width: 425px) {
+    .header__logo-img {
+        width: 200px;
+    }
     .hero {
         height: 70vh;
     }

@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../images/icon.png">
-
+    <!--Animate on scroll-->   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../estilos/style.css">
@@ -19,7 +21,7 @@
     
     <div class="grid__book-now">
         <header class="header">
-            <a href="../index.html" class="header__logo">
+            <a href="../index.html" class="header__logo ">
                 <img src="../images/TedLead-logo3.png" class="header__logo-img" alt="Logo">
             </a>
 
@@ -77,8 +79,8 @@
 
         <div class="book__right">
             <div class="hero__text">
-                <h1 class="hero__text-heading">reservations.</h1>
-                <h2 class="hero__text-slogan">one step away<br>
+                <h1 class="hero__text-heading animation-delay-heading" data-aos="fade-up">reservations.</h1>
+                <h2 class="hero__text-slogan animation-delay-slogan" data-aos="fade-up">one step away<br>
             </div>
         </div>
     
@@ -99,7 +101,9 @@
         </footer>
     </div>
 
-
-
+    <!--Animate on scroll-->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
