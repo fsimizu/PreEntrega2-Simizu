@@ -10,12 +10,6 @@
     --rojo:#f75077;
     }
 
-/*Colour palette
-Green (#6a8d73)
-White (#f4fdd9)
-Red (#f75077)
-*/
-
 /*header START*/
 .header {
     background-color: var(--verde);
@@ -95,38 +89,37 @@ a:hover{
     }
 /*footer END*/
 
-/*hero START*/
-.index {
-    background-image: url("../images/hero_image1.jpg");
-}
+/*index START*/
 
-.hero {   
+.index__hero {
     height: 80vh;
     min-height: 450px;
     color: var(--blanco);
-    position: relative;
+
+    background-image: url("../images/image_index.jpg");
     background-position: left ;
     background-size: cover;
+
 }
 
-.hero__text{
+.index__hero-text{
     display: inline-block;
     position: relative;
     margin: 2em;
     top: 15%;
 }
 
-.hero__text-heading {
+.index__hero-heading {
     font-weight:500;
     font-size: 100px;
 }
 
-.hero__text-slogan {
+.index__hero-slogan {
     font-weight:500;
     font-size: 50px;
 }
 
-.hero__text-btn {
+.index__hero-btn {
     position: relative;
     top: 5vh;
 }
@@ -152,31 +145,31 @@ a:hover{
 }
 
 /*location START*/
-.grid__location {
+.location__grid {
     display: grid;
     grid-template-columns: 3fr 4fr;
     grid-template-areas: "header header"
-                         "text map"
+                         "location__hero location__map"
                          "footer footer"
-                         ;
-}
+                         ;}
 
-.location__text {
+.location__hero {
     display: inline-block;
     height: 80vh;
     min-height: 500px;
     color: var(--blanco);
-    background-image: url("../images/image3.jpg");
+    background-image: url("../images/image_location.jpg");
     background-position: left ;
     background-size: cover;
-    grid-area: text;
+    grid-area: location__hero;
+    vertical-align:top;
 }
 
 .location__map {
     display: inline-block;
     height: 80vh;
     vertical-align:top;
-    grid-area: map;
+    grid-area: location__map;
 }
 
 .location__map iframe {
@@ -186,11 +179,11 @@ a:hover{
 /*location END*/
 
 /*Booking START*/
-.grid__book-now {
+.book__grid {
     display: grid;
     grid-template-columns: 3fr 4fr;
     grid-template-areas: "header header"
-                         "book-details book-text"
+                         "book__left book__hero"
                          "footer footer"
                          ;
 }
@@ -199,7 +192,7 @@ a:hover{
     font-size: 20px;
     background-color:var(--blanco);
     padding: 1em;
-    grid-area: book-details;
+    grid-area: book__left;
 }
 .book__item {
     padding: 5px 0px;
@@ -211,25 +204,26 @@ a:hover{
 input {
     font-size: 20px;
 }
-.book__right{
+.book__hero{
     display: inline-block;
     height: 80vh;
+    min-height: 450px;
     vertical-align:top;
     color: var(--blanco);
-    background-image: url("../images/image4.jpg");
+    background-image: url("../images/image_booknow.jpg");
     background-position: left ;
     background-size: cover;
-    grid-area: book-text;
+    grid-area: book__hero;
 }
 
 /*Booking END*/
 
 /*Review START*/
-.grid__review {
+.review__grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "header header"
-                         "left right"
+                         "review__left review__hero"
                          "footer footer"
                          ;
 }
@@ -241,7 +235,7 @@ input {
     font-size: 20px;
     background-color:var(--blanco);
     padding: 1em;
-    grid-area: left;
+    grid-area: review__left;
 }
 .review__left textarea {
     padding:5px; 
@@ -249,21 +243,21 @@ input {
     min-height: 50px;
 }
 
-.review__right{
+.review__hero{
     display: inline-block;
     min-height: 500px;
     height: 80vh;
     vertical-align:top;
     color: #f4fdd9;
-    background-image: url("../images/image6.jpg");
+    background-image: url("../images/image_review.jpg");
     background-position: left ;
     background-size: cover;
-    grid-area: right;
+    grid-area: review__hero;
 }
-.review__right .hero__text-btn{
+.review__hero .index__hero-btn{
     top: 1em;
 }
-.review__right .hero__text{
+.review__hero .index__hero-text{
     top: 10%;
 }
 
@@ -310,10 +304,15 @@ input {
 /*Review END*/
 
 /*Menu START*/
-.menu-main {
-    background-image: url("../images/image2.jpg");
-    min-height: 500px;
+.menu__hero {
+    background-image: url("../images/image_menu.jpg");
+    height: 80vh;
+    min-height: 450px;
+    color: var(--blanco);
+    background-position: left ;
+    background-size: cover;
 }
+
 .favoritos {
     width: 100vw;
     text-align: center;
@@ -381,37 +380,37 @@ input {
 @media screen and (max-width: 768px) {
 
     /*Location START*/
-    .grid__location {
+    .location__grid {
         grid-template-areas: "header header"
-                             "text text"
-                             "map map"
+                             "location__hero location__hero"
+                             "location__map location__map"
                              "footer footer"
                              ;
     }
     /*Location END*/
 
     /*Review START*/
-    .grid__review {
+    .review__grid {
         grid-template-areas: "header header"
-                             "right  right"
-                             "left left"
+                             "review__hero  review__hero"
+                             "review__left review__left"
                              "footer footer"
                              ;
     }
-    .review__right {
+    .review__hero {
         overflow: hidden;
     }
     /*Review END*/
 
     /*Book-Now START*/
-    .grid__book-now {
+    .book__grid {
         grid-template-areas: "header header"
-                             "book-text  book-text"
-                             "book-details book-details"
+                             "book__hero  book__hero"
+                             "book__left book__left"
                              "footer footer"
                              ;
     }
-    .book__right {
+    .book__hero {
         overflow: scroll;
     }
     /*Book-Now END*/
@@ -422,16 +421,16 @@ input {
     .header__logo-img {
         width: 200px;
     }
-    .hero {
+    .index__hero {
         height: 70vh;
     }
-    .hero__text{
+    .index__hero-text{
         top: 7%;
     }
-    .hero__text-heading{
+    .index__hero-heading{
         font-size: 90px;
     }
-    .hero__text-slogan{
+    .index__hero-slogan{
         font-size: 40px;
     }
     .header__list {
@@ -440,24 +439,24 @@ input {
     .footer{
         justify-content: center;
     }
-    .location__text {
+    .location__hero {
         height: 70vh;
         overflow: hidden;
     }
-    .review__right {
+    .review__hero {
         overflow: hidden;
     }
-    .review__right .hero__text-heading {
+    .review__hero .index__hero-heading {
         font-size: 70px;
     }
-    .review__right .hero__text {
+    .review__hero .index__hero {
         margin: 1em;
     }
-    .book__right .hero__text {
+    .book__hero .index__hero {
         margin: 1em;
         font-size: 10px ;
     }
-    .book__right .hero__text-heading {
+    .book__hero .index__hero-heading {
         font-size: 70px ;
     }
 
