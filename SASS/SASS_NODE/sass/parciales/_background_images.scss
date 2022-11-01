@@ -1,0 +1,15 @@
+@import "./variables";
+@mixin hero-images {
+        background-position: left ;
+    	background-size: cover;
+    	height: 80vh;
+	    min-height: 500px;
+        color: $blanco;
+}
+$pages: "index","location","book","menu","review";
+@each $page in $pages {
+    .#{$page}__hero {
+        background-image:url("../../../images/image_"+$page+".jpg");
+        @include hero-images();
+    }
+}

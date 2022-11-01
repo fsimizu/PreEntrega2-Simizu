@@ -1,0 +1,103 @@
+@import "./variables";
+/*Extras Location*/
+.location {
+    &__content {
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+/*Extras Book*/
+.book {
+    &__item {
+        padding: 5px 0px;
+        font-size: 20px;
+    }
+    &__btn {
+        margin-top: 15px ;
+    }
+    input {
+        font-size: 20px;
+    }
+}
+/*Extras Review*/
+.review {
+    &__content {
+        textarea {
+            padding:5px; 
+            width: 100%; 
+            min-height: 50px;
+            height: 90%;
+        }
+    }
+    &__top {
+        height: 45%;
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #textarea {
+            flex-grow: 1;
+            height: 60%;
+        }
+    }
+    &__bottom {
+        height: 55%;
+        overflow-y: scroll;
+        margin-top: 1em;
+        &::-webkit-scrollbar {
+            width: 5px;
+            &-track {
+                background: #f1f1f1;
+            }
+            &-thumb {
+                background: $verde;
+                &:hover {
+                    background:$rojo;
+                }
+            }
+        }
+    }
+    &__comment {
+        font-size: 15px;
+        font-weight: lighter;
+        padding-right: 10px;
+        padding-bottom: 2em;
+        text-align: justify;   
+    }
+}
+/*Extras Review*/
+.menu {
+    width: 100vw;
+    background-color: $blanco;
+    text-align: center;
+    &__header {
+        font-weight:400;
+        font-size: 40px;
+        padding: 20px;
+    }
+    &__item {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+    .carousel {
+        &-indicators {
+            bottom: 20%;
+        }
+        &-caption {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: black;
+        }
+    }
+    #carouselExampleCaptions {
+        margin: 0px auto;
+        max-width: 500px;
+    }
+}

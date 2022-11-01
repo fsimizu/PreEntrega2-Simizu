@@ -1,0 +1,40 @@
+@import "./variables";
+@mixin textos ($weight, $size, $duration){
+    font-weight: $weight;
+    font-size: $size;
+    transition-duration: $duration !important;
+}
+/*index START*/
+.index {
+    &__hero-text{
+        display: inline-block;
+        position: relative;
+        margin: 2rem;
+        top: 15%;
+    }
+    &__hero-heading {
+        @include textos (500, 100px, 1s);
+    }
+    &__hero-slogan {
+        @include textos (500, 50px, 1.4s);
+    }
+    &__hero-btn {
+        position: relative;
+        top: 5vh;
+    }
+
+    @media screen and (max-width: 425px) {
+    &__hero {
+        height: 70vh;
+    }
+    &__hero-text {
+        top: 7%;
+    }
+    &__hero-heading {
+        @include textos (400, 80px, 1s);
+    }
+    &__hero-slogan {
+        @include textos (400, 40px, 1.4s);
+    }
+    }    
+}/*index END*/

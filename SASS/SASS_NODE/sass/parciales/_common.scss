@@ -1,0 +1,11 @@
+@import "./variables";
+.btn {
+    font-size: 30px;
+    padding: 5px 30px;
+    background-color: $blanco;
+    &:hover{
+        background-color: $rojo;
+        color: $blanco;
+        transition-duration: 0.4s;
+        }
+    }

@@ -1,0 +1,44 @@
+@import "./variables";
+/*grid START*/
+$pages: "location","book","review";
+@each $page in $pages {
+    .#{$page}__grid {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-template-areas:"header header"
+                            $page+"__left"+" "+$page+"__right"
+                            "footer footer";
+                        }
+    .#{$page}__hero {
+        display: inline-block;
+        vertical-align:top;
+        grid-area: #{$page}__right;
+        }
+    
+    .#{$page}__content {
+        display: inline-block;
+        vertical-align:top;
+        height: 80vh;
+        min-height: 500px;
+        background-color: $blanco;
+        font-size: 20px;
+        padding: 1rem;
+        grid-area: #{$page}__left;
+    }
+
+    @media screen and (max-width:768px){
+        .#{$page}__grid {
+        grid-template-areas:"header header"
+        $page+"__right"+" "+$page+"__right" 
+        $page+"__left"+" "+$page+"__left"
+        "footer footer";
+        }
+        .#{$page}__hero {
+            overflow: hidden;
+        }
+    } 
+    @media screen and (max-width:425px){
+        .#{$page}__hero {
+            font-size: 70px;
+        }
+    }}/*grid END*/
