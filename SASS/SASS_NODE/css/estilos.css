@@ -302,9 +302,9 @@ a:hover {
 
 /*Extras Review*/
 .menu {
-  width: 100vw;
   background-color: #f4fdd9;
-  text-align: center; }
+  text-align: center; 
+}
   .menu__header {
     font-weight: 400;
     font-size: 40px; }
