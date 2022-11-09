@@ -263,6 +263,10 @@ a:hover {
 .book input {
   font-size: 20px; }
 
+@media screen and (max-width: 768px) {
+  .book__content {
+    height: 30vh; } }
+
 /*Extras Review*/
 .review__content textarea {
   padding: 5px;
@@ -303,8 +307,7 @@ a:hover {
 /*Extras Review*/
 .menu {
   background-color: #f4fdd9;
-  text-align: center; 
-}
+  text-align: center; }
   .menu__header {
     font-weight: 400;
     font-size: 40px; }
